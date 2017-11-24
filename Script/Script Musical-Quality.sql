@@ -9,7 +9,14 @@ CREATE TABLE IF NOT EXISTS `musical_quality`.`registro` (
   `Edad` INT(11) NULL DEFAULT NULL COMMENT '',
   `Email` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL COMMENT '',
   `Contraseña` BLOB NULL DEFAULT NULL COMMENT '',
-  PRIMARY KEY (`Id_Registro`))
+  `login_Id_Login` INT(11) NOT NULL COMMENT '',
+  PRIMARY KEY (`Id_Registro`)  COMMENT '',
+  INDEX `fk_registro_login1_idx` (`login_Id_Login` ASC)  COMMENT '',
+  CONSTRAINT `fk_registro_login1`
+    FOREIGN KEY (`login_Id_Login`)
+    REFERENCES `musical_quality`.`login` (`Id_Login`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_unicode_ci;
@@ -18,29 +25,24 @@ CREATE TABLE IF NOT EXISTS `musical_quality`.`login` (
   `Id_Login` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
   `Email` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL COMMENT '',
   `Contraseña` BLOB NULL DEFAULT NULL COMMENT '',
-  `registro_Id_Registro` INT(11) NOT NULL COMMENT '',
+  `usuario_idUsuario` INT(11) NOT NULL COMMENT '',
   PRIMARY KEY (`Id_Login`)  COMMENT '',
-  INDEX `fk_login_registro_idx` (`registro_Id_Registro` ASC)  COMMENT '',
-  CONSTRAINT `fk_login_registro`
-    FOREIGN KEY (`registro_Id_Registro`)
-    REFERENCES `musical_quality`.`registro` (`Id_Registro`)
+  INDEX `fk_login_usuario1_idx` (`usuario_idUsuario` ASC)  COMMENT '',
+  CONSTRAINT `fk_login_usuario1`
+    FOREIGN KEY (`usuario_idUsuario`)
+    REFERENCES `musical_quality`.`usuario` (`idUsuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS `musical_quality`.`Usuario` (
-  `idUsuario` INT  NOT NULL COMMENT '',
-  `login_Id_Login` INT(11) NOT NULL COMMENT '',
-  PRIMARY KEY (`idUsuario`)  COMMENT '',
-  INDEX `fk_Usuario_login1_idx` (`login_Id_Login` ASC)  COMMENT '',
-  CONSTRAINT `fk_Usuario_login1`
-    FOREIGN KEY (`login_Id_Login`)
-    REFERENCES `musical_quality`.`login` (`Id_Login`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+CREATE TABLE IF NOT EXISTS `musical_quality`.`usuario` (
+  `idUsuario` INT(11) NOT NULL COMMENT '',
+  PRIMARY KEY (`idUsuario`)  COMMENT '')
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `musical_quality`.`lista_de_reproduccion` (
   `Id_Lista_De_Reproduccion` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
