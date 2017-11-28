@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `musical_quality`.`registro` (
   `email` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL COMMENT '',
   `contraseña` BLOB NULL DEFAULT NULL COMMENT '',
   `loginIdLogin` INT(11) NOT NULL COMMENT '',
-  PRIMARY KEY (`IdRegistro`)  COMMENT '',
+  PRIMARY KEY (`idRegistro`)  COMMENT '',
   INDEX `fk_registro_login1_idx` (`loginIdLogin` ASC)  COMMENT '',
   CONSTRAINT `fk_registro_login1`
     FOREIGN KEY (`loginIdLogin`)
