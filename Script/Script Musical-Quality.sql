@@ -90,4 +90,4 @@ CREATE TABLE IF NOT EXISTS `musical_quality`.`musica` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
-COLLATE = utf8_unicode_ci
+COLLATE = utf8_unicode_ci;
