@@ -2,7 +2,7 @@ CREATE DATABASE Musical_Quality DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_
 
 USE Musical_Quality;
 
-CREATE TABLE IF NOT EXISTS `musical_quality`.`registro` (
+CREATE TABLE IF NOT EXISTS `musicalQuality`.`Registro` (
   `idRegistro` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
   `nombre` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL COMMENT '',
   `apellido` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL COMMENT '',
@@ -21,7 +21,7 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS `musical_quality`.`login` (
+CREATE TABLE IF NOT EXISTS `musicalQuality`.`Login` (
   `idLogin` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
   `email` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL COMMENT '',
   `contraseña` BLOB NULL DEFAULT NULL COMMENT '',
@@ -37,14 +37,14 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS `musical_quality`.`usuario` (
+CREATE TABLE IF NOT EXISTS `musicalQuality`.`Usuario` (
   `idUsuario` INT(11) NOT NULL COMMENT '',
   PRIMARY KEY (`idUsuario`)  COMMENT '')
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS `musical_quality`.`lista_de_reproduccion` (
+CREATE TABLE IF NOT EXISTS `musicalQuality`.`ListaDeReproduccion` (
   `idListaDeReproduccion` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
   `nombreLista` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL COMMENT '',
   `usuarioIdUsuario` INT NOT NULL COMMENT '',
@@ -59,13 +59,13 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS `musical_quality`.`Generos` (
+CREATE TABLE IF NOT EXISTS `musicalQuality`.`Generos` (
   `idGeneros` INT not NULL COMMENT '',
   `genero` VARCHAR(45) NULL COMMENT '',
   PRIMARY KEY (`idGeneros`)  COMMENT '')
 ENGINE = InnoDB;
 
-CREATE TABLE IF NOT EXISTS `musical_quality`.`musica` (
+CREATE TABLE IF NOT EXISTS `musicalQuality`.`Musica` (
   `idMusica` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
   `nombre` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL COMMENT '',
   `artista` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL COMMENT '',
