@@ -1,4 +1,4 @@
-var urlWS ="";
+var urlWS = "";
 $(document).ready(function(){
     urlWS="http://musical-quality.byethost7.com/server"
 });
