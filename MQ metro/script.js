@@ -2,7 +2,7 @@ var urlWS ="";
 $(document).ready(funtion){
     urlWS="http://musical-quality.byethost7.com/server/"
 }
-function crear(){
+function crearreg(){
     nombre = document.getElementById("nombre").value;
     apellido = document.getElementById("apellido").value;
     edad = document.getElementById("edad").value;
