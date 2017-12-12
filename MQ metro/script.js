@@ -1,6 +1,6 @@
 var urlWS ="";
 $(document).ready(funtion){
-    urlWS="http://musical-quality.byethost7.com/server/"
+    urlWS="http://musical-quality.byethost7.com/server"
 }
 function crearreg(){
     nombre = document.getElementById("nombre").value;
