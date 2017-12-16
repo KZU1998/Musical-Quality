@@ -9,7 +9,7 @@ function leer(){
       $.ajax({
         type: "get",
         url: urltorequest,
-        async:true,
+        async:false,
         success:  function (respuesta) {
           alert("llegaron los datos");
         }

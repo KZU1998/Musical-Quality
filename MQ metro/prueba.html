@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link href="css/metro.css" rel="stylesheet">
-    <link href="css/metro-icons.css" rel="stylesheet">
-    <link href="css/metro-responsive.css" rel="stylesheet">
-    <link href="css/metro-schemes.css" rel="stylesheet">
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/select2.min.js"></script>
-    <script src="js/metro.js"></script>
-    
+  <link href="css/metro.css" rel="stylesheet">
+  <link href="css/metro-icons.css" rel="stylesheet">
+  <link href="css/metro-responsive.css" rel="stylesheet">
+  <link href="css/metro-schemes.css" rel="stylesheet">
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/metro.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+  <script> src="script.js"</script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Musical Quality</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta charset="utf-8"/>
+  <script>
+      $(document).ready(function (e) {
+          
+      
+          $.backstretch(["fondos/fon.jpg"]);
+      });
+  </script>
+  <style>
+       img{
+max-width: 100%;
+  }
+  </style>
+ 
 </head>
 <body>
-        
-            <div class="appbar" data-role="appbar">
-                    <ul class="app-bar-menu">
-                    
-                    </ul>
-                    <div class="app-bar-pullbutton">
-                        More
-                        <span class="mif-plus"></span>
-                    </div>
-                </div>
-                               
-               
+  <div class="col-md-2">
+    
+   <button type="button" class="btn btn-success btn-lg btn-block" onclick="leer()">
+     L E E R
+   </button>
+ </div>
+
 </body>
 </html>
