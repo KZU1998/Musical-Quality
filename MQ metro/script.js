@@ -2,25 +2,28 @@ var urlWS = "";
 $(document).ready(function(){
     urlWS="http://musical-quality.byethost7.com/server"
 });
-function crearreg(){
-    nombre = document.getElementById("nombre").value;
-    apellido = document.getElementById("apellido").value;
-    edad = document.getElementById("edad").value;
-    email = document.getElementById("email").value;
-    clave = document.getElementById("clave").value;
-    urltorequest = urlWS +"Registro/crear";
+
+
+function leer(){
+    if(id==0){
+        urltorequest = urlWS +"Generos/leer";
+    }else{
+        urltorequest = urlWS +"Generos/leer";
+    }
     $.ajax({
-        type: "post",
+        type: "get",
         url: urltorequest,
-        data:JSON.stringify({nombre: nombre, apellido: apellido, edad: edad, email: email, clave: clave}),
-        async:false,
+        async:true,
         success:  function (respuesta) {
-            if(respuesta=="false"){
-                alert("Error al crear el registro");
-            }else{
-                alert("Registro creado.");
-            }
+           toshow = JSON.parse(respuesta);
+           cabeceraTabla = "<table class=\"table table-condensed\"><thead><tr><th>id</th><th>TIPO</th></tr></thead><tbody>";
+           pieTabla = "</tbody></table>";
+           contenidoTabla = "";
+           $(toshow).each(function(key,value){
+                contenidoTabla=contenidoTabla+"<tr><td>"+value.idGeneros+"</td><td>"+value.genero+"</td></tr>";
+           });
+           document.getElementById("respuesta").innerHTML=cabeceraTabla+contenidoTabla+pieTabla;
         }
     });
-    leer();
+    limpiar();
 }
