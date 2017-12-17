@@ -22,7 +22,7 @@ function crearreg(){
     edad = document.getElementById("edad").value;
     email = document.getElementById("email").value;
     clave = document.getElementById("clave").value;
-    urltorequest = urlWS +"Registro/leer";
+    urltorequest = urlWS +"Registro/crear";
     $.ajax({
         type: "post",
         url: urltorequest,
@@ -36,6 +36,24 @@ function crearreg(){
             }
         }
     });
-    leer();
+   
 }
-
+function crear(){
+    idGeneros = document.getElementById("idGeneros").value;
+    genero = document.getElementById("genero").value;
+    urltorequest = urlWS +"Generos/crear";
+    $.ajax({
+        type: "post",
+        url: urltorequest,
+        data:JSON.stringify({idGeneros: idGeneros, genero: genero}),
+        async:false,
+        success:  function (respuesta) {
+            if(respuesta=="false"){
+                alert("Error al crear el registro");
+            }else{
+                alert("Registro creado.");
+            }
+        }
+    });
+   
+}
