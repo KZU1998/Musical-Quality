@@ -1,2 +1,2 @@
 <?php
-define("NOMBRE_CONEXION","bytehost");
+define("NOMBRE_CONEXION","local");
