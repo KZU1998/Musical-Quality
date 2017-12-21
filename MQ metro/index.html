@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html5>
+<html>
 <head>
     <title>Musical Quality</title>
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
       <script src="js/select2.min.js"></script>
       <script src="js/metro.js"></script>
       <script src="js/jquery.backstretch.min.js"></script>
-      
+      <script> src="script.js"</script>
       <link rel="stylesheet" href="css/estilos.css">
   
       
@@ -157,12 +157,21 @@ max-width: 100%;
         
     </div>   
     <div>
-        <button class="button primary" onclick="leer()">Primary</button>
+        
     </div>
-    <div>
-        <h3 id="respuesta"></h3>
-    </div>
-             
-   
+    <h3>Top Canciones</h3>
+    <div class="tile">
+            
+            <div class="tile-content">  
+                <a href="registro.html" class="live-slide"><img src="http://f4.bcbits.com/img/a2528363725_10.jpg" data-role="fitImage" data-format="fill"></a>
+                <span class="tile-label" style="color:aliceblue">Monstercat-Snake Eyes</span>
+                
+            </div>
+            <div data-role="audio" data-mode="micro" >
+                    <audio>
+                        <source src="media/Feint - Snake Eyes (feat. CoMa) [Monstercat Release].mp3" type='audio/mp3'>
+                    </audio>
+                </div> 
+        </div>   
 </body>
-</html5>
+</html>

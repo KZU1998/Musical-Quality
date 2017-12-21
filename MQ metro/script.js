@@ -57,3 +57,6 @@ function crear(){
     });
    
 }
+function rep(){
+    window.open('http://www.google.com');
+}
