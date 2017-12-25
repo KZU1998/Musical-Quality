@@ -21,12 +21,12 @@ function crearreg(){
     apellido = document.getElementById("apellido").value;
     edad = document.getElementById("edad").value;
     email = document.getElementById("email").value;
-    clave = document.getElementById("clave").value;
+    pw = document.getElementById("pw").value;
     urltorequest = urlWS +"Registro/crear";
     $.ajax({
         type: "post",
         url: urltorequest,
-        data:JSON.stringify({nombre: nombre, apellido: apellido, edad: edad, email: email, clave: clave}),
+        data:JSON.stringify({nombre: nombre, apellido: apellido, edad: edad, email: email, pw: pw}),
         async:false,
         success:  function (respuesta) {
             if(respuesta=="false"){
@@ -38,14 +38,15 @@ function crearreg(){
     });
    
 }
+
 function crear(){
-    idGeneros = document.getElementById("idGeneros").value;
-    genero = document.getElementById("genero").value;
+    id = document.getElementById("id").value;
+    des = document.getElementById("descripcion").value;
     urltorequest = urlWS +"Generos/crear";
     $.ajax({
         type: "post",
         url: urltorequest,
-        data:JSON.stringify({idGeneros: idGeneros, genero: genero}),
+        data:JSON.stringify({id: id, descripcion: des}),
         async:false,
         success:  function (respuesta) {
             if(respuesta=="false"){
@@ -55,8 +56,5 @@ function crear(){
             }
         }
     });
-   
-}
-function rep(){
-    window.open('http://www.google.com');
+
 }

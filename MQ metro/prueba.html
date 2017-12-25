@@ -15,9 +15,8 @@
       <script src="js/metro.js"></script>
       <script src="js/jquery.backstretch.min.js"></script>
       <link rel="stylesheet" href="css/estilos.css">
-  
-      
-    <script src="script.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+    
     <script>
         $(document).ready(function (e) {
             
@@ -33,22 +32,15 @@ max-width: 100%;
    
 </head>
 <body>
-        <div class="tile">
-                <div class="tile-content">
-                    <div class="image-container">
-                        <div class="frame">
-                            <img src="...">
-                        </div>
-                        <div class="overlay">
-                                <div data-role="audio" data-mode="micro" >
-                                        <audio>
-                                            <source src="http://music.monstercat" type='audio/mp3' />
-                                        </audio>
-                                    </div> 
-                        </div>
-                    </div>
-                </div>
+
+
+        <div class="input-control text" id="id">
+                <input type="text">
             </div>
+            <div class="input-control text" id="genero">
+                    <input type="text">
+                </div>
+                <button class="button primary" onclick="crear()">Primary</button>
 </body>
 </html5>
    
