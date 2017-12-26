@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php  
+$con = mysqli_connect("localhost","id4105697_vessel9","vessel9","id4105697_musicalquality") or die("conexion exitosa!");
+?>
 <html>
 <head>
     <title>Musical Quality</title>
@@ -34,7 +37,6 @@ max-width: 100%;
    
 </head>
 <body>
-        
         
             <div>
             <div class="app-bar darcula">
@@ -86,7 +88,7 @@ max-width: 100%;
                                 
                             </picture>
                         </div>
-                    
+                        
                 <div class="app-bar-element place-right">
                         <a class="dropdown-toggle fg-white"><span class="mif-enter"></span> Ingresar</a>
                         <div class="app-bar-drop-container bg-darcula fg-white place-right"
@@ -159,33 +161,61 @@ max-width: 100%;
     <div>
         
     </div>
-    <h3>Top Canciones</h3>
-    <div class="tile">
-            
-            <div class="tile-content">  
-                <a href="registro.html" class="live-slide"><img src="http://f4.bcbits.com/img/a2528363725_10.jpg" data-role="fitImage" data-format="fill"></a>
-                <span class="tile-label" style="color:aliceblue">Monstercat-Snake Eyes</span>
+    <div class="tile-group double">
+        <h2>
+            <span class="tile-group-title fg-black">Top 10</span>
+        </h2>
+        <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                        </a>
+                    </div>
                 
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Monstercat<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Can See <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Vigilancer - Can See.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
             </div>
-            <div data-role="audio" data-mode="micro" >
-                    <audio>
-                        <source src="media/Vigilancer - Can See.mp3" type='audio/mp3'>
-                    </audio>
-                </div> 
-        </div>   
-        <div class="tile">
-            
-            <div class="tile-content">  
-                <a href="registro.html" class="live-slide"><img src="https://s.mxmcdn.net/images-storage/albums4/6/0/1/3/2/9/37923106_350_350.jpg" data-role="fitImage" data-format="fill"></a>
-                <span class="tile-label" style="color:aliceblue">Monstercat-Snake Eyes</span>
+           
+        <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                        <img src="https://s.mxmcdn.net/images-storage/albums4/6/0/1/3/2/9/37923106_350_350.jpg">
+                    </div>
                 
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Ozuna <span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Criminal <span class="text-bold" id="ozone"></span></p>
+                            
+                        </center>
+                        <img src="https://s.mxmcdn.net/images-storage/albums4/6/0/1/3/2/9/37923106_350_350.jpg">
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Criminal - Natti Natasha_ Ozuna [500kbps_M4A].m4a" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                </div>
             </div>
-            <div data-role="audio" data-mode="micro" >
-                    <audio>
-                        <source src="media/Criminal - Natti Natasha_ Ozuna [500kbps_M4A].m4a" type='audio/mp3'>
-                    </audio>
-                </div> 
-        </div> 
+    </div>
           
 </body>
 </html>

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php  
+$con = mysqli_connect("localhost","id4105697_vessel9","vessel9","id4105697_musicalquality") or die("conexion exitosa!");
+?>
 <html>
 <head>
         <title>Musical Quality</title>
@@ -101,19 +104,40 @@ max-width: 100%;
     <div class='login'>
             
       <h2 style="color:darkgray">Registro</h2>
-      <input name='nombre' placeholder='Nombre' style="color:rgb(43, 189, 226)" id='nombre' type='text'>
-      <input name='apellido' placeholder='Apellido'  style="color:rgb(43, 189, 226)" id='apellido' type='text'>      
-      <input name='edad' placeholder='Edad'  style="color:rgb(43, 189, 226)" id='edad' type='text'>
-      <input name='email' placeholder='E-mail'  style="color:rgb(43, 189, 226)" id='email'type='text'>
-      <input id='pw' name='password' placeholder='Passowrd'  style="color:rgb(43, 189, 226)" type='password'>
+      <input name="nombre" placeholder='Nombre' style="color:rgb(43, 189, 226)"  type='text'>
+      <input name="apellido" placeholder='Apellido'  style="color:rgb(43, 189, 226)" type='text'>      
+      <input name="edad" placeholder='Edad'  style="color:rgb(43, 189, 226)" type='text'>
+      <input name="email" placeholder='E-mail'  style="color:rgb(43, 189, 226)" type='text'>
+      <input name="password" placeholder='Passowrd'  style="color:rgb(43, 189, 226)" type='password'>
      
       <div class='agree'>
         <input id='agree' name='agree' type='checkbox'>
         <label for='agree'></label>Aceptas las reglas y condiciones
       </div>
-      <input class='animated' type='submit' value='Registrarse' onclick="crearreg()">
+      <input class='animated' type='submit' name="insert" value='Registrarse' action="registro.php">
       <a class='forgot' href='#'>Ya tienes una cuenta?</a>
     </div>
+    	
+	<?php 
+	if(isset($_POST['insert'])){
+	
+        $nom = $_POST['nombre'];
+        $ape = $_POST['apellido'];
+        $ed = $_POST['edad'];
+        $ema = $_POST['email'];
+		$pass = $_POST['password'];
+		
+		$insertar = "INSERT INTO Registro (nombre,apellido,edad,email,clave) values ('$nom','$ape','$ed','$ema','$pass')";
+		
+		$ejecutar = mysqli_query($con,$insertar);
+	
+		if($ejecutar){
+		
+		echo "<h3>Insertado correctamente</h3>";
+		}
+	}
+	
+    ?> 
 
    
 </body>
