@@ -13,7 +13,8 @@ $con = mysqli_connect("localhost","id4105697_vessel9","vessel9","id4105697_music
       <link href="css/metro-responsive.css" rel="stylesheet">
       <link href="css/metro-schemes.css" rel="stylesheet">
       <script src="js/jquery-2.1.3.min.js"></script>
-      <script src="js/jquery.dataTables.min.js"></script>
+      <script src="js/jquery.dt
+      ataTables.min.js"></script>
       <script src="js/select2.min.js"></script>
       <script src="js/metro.js"></script>
       <script src="js/jquery.backstretch.min.js"></script>

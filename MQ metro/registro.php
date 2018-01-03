@@ -109,14 +109,9 @@ max-width: 100%;
       <input name="edad" placeholder='Edad'  style="color:rgb(43, 189, 226)" type='text'>
       <input name="email" placeholder='E-mail'  style="color:rgb(43, 189, 226)" type='text'>
       <input name="password" placeholder='Passowrd'  style="color:rgb(43, 189, 226)" type='password'>
-     
-      <div class='agree'>
-        <input id='agree' name='agree' type='checkbox'>
-        <label for='agree'></label>Aceptas las reglas y condiciones
-      </div>
+    <
       <input class='animated' type='submit' name="insert" value='Registrarse' action="registro.php">
-      <a class='forgot' href='#'>Ya tienes una cuenta?</a>
-    </div>
+     
     	
 	<?php 
 	if(isset($_POST['insert'])){
@@ -133,7 +128,7 @@ max-width: 100%;
 	
 		if($ejecutar){
 		
-		echo "<h3>Insertado correctamente</h3>";
+		
 		}
 	}
 	
