@@ -216,6 +216,224 @@ max-width: 100%;
                         </div> 
                 </div>
             </div>
+
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/db/d6/54/dbd654ef-c216-f6a6-c3d0-9c219b176a7c/886446817590.jpg/1200x630bb.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">San Luis, Silvestre Dangond<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Como Yo <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/db/d6/54/dbd654ef-c216-f6a6-c3d0-9c219b176a7c/886446817590.jpg/1200x630bb.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/San Luis, Silvestre Dangond  - Como Yo (Letra).mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://cdn2.ipauta.com/wp-content/uploads/2017/10/Tomas-The-Latin-Boy-Ft.-Farina-Parcera.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Tomas The Latin Boy ft. Farina<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Parcera <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://cdn2.ipauta.com/wp-content/uploads/2017/10/Tomas-The-Latin-Boy-Ft.-Farina-Parcera.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Tomas The Latin Boy ft. Farina - Parcera (LETRA).mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="https://enmp3.org/wp-content/uploads/2017/10/Mau-Y-Ricky-Ft.-Karol-G-Mi-Mala.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Karol G ft. Mau y Ricky<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Mi mala <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="https://enmp3.org/wp-content/uploads/2017/10/Mau-Y-Ricky-Ft.-Karol-G-Mi-Mala.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Karol G ft. Mau y Ricky - Mi Mala (Letra_Lyrics).mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://cdn1.ipauta.com/wp-content/uploads/2017/05/Shakira-Ft.-Nicky-Jam-Perro-Fiel.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Shakira (LETRA) ft. Nicky Jam<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Perro Fiel<span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://cdn1.ipauta.com/wp-content/uploads/2017/05/Shakira-Ft.-Nicky-Jam-Perro-Fiel.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Perro Fiel - Shakira (LETRA) ft. Nicky Jam.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="https://4.bp.blogspot.com/-bOERxkHToTs/WbwPS-Mi63I/AAAAAAAAMqo/CnyMJJyp370CTyJBQ3nuKE8mIWq3U1aSACK4BGAYYCw/s1600/Mr%2BBlack%2B-%2BFiesta%2BPal%2BMundo.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Mr Black<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Fiesta Pal Mundo<span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="https://4.bp.blogspot.com/-bOERxkHToTs/WbwPS-Mi63I/AAAAAAAAMqo/CnyMJJyp370CTyJBQ3nuKE8mIWq3U1aSACK4BGAYYCw/s1600/Mr%2BBlack%2B-%2BFiesta%2BPal%2BMundo.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Mr Black - Fiesta Pal Mundo _ Audio.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="https://i1.wp.com/latinmusicrecordpool.net/wp-content/uploads/2017/10/Mirella-Cesa-En-ti-mp3-image.jpg?fit=1000%2C1000">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Mirella Cesa<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">En Ti<span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="https://i1.wp.com/latinmusicrecordpool.net/wp-content/uploads/2017/10/Mirella-Cesa-En-ti-mp3-image.jpg?fit=1000%2C1000">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Mirella Cesa - En Ti (vídeo oficial).mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="https://i1.sndcdn.com/artworks-000207573634-wnwksx-t500x500.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Karol G<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Hello Live<span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="https://i1.sndcdn.com/artworks-000207573634-wnwksx-t500x500.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Karol G - Hello Live _ YouTube Space Miami.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://www.elgenero.com/images/subir/images/14780274251492578769.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Karol G<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Hello<span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://www.elgenero.com/images/subir/images/14780274251492578769.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Ozuna Ft Karol G - Hello ★ ® 2016.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+           
     </div>
           
 </body>
