@@ -120,7 +120,7 @@ max-width: 100%;
                     </div>
                    
                     <div>
-                <a class="app-bar-element" href="...">Musical Quality</a>
+                <a class="app-bar-element" href="index.php">Musical Quality</a>
             
                 <span class="app-bar-divider"></span>
             
@@ -130,16 +130,16 @@ max-width: 100%;
                     <li>
                         <a href="" class="dropdown-toggle">Generos</a>
                         <ul class="d-menu" data-role="dropdown">
-                            <li><a href="">1</a></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">3</a></li>
-                            <li><a href="">4</a></li>
+                            <li><a href="">POP</a></li>
+                            <li><a href="">REGUETON</a></li>
+                            <li><a href="">SALSA</a></li>
+                            <li><a href="">ELECTRONICA</a></li>
                             <li class="divider"></li>
                             <li><a href="" class="dropdown-toggle">Otros</a>
                                 <ul class="d-menu" data-role="dropdown">
-                                    <li><a href="">1</a></li>
-                                    <li><a href="">2/a></li>
-                                    <li><a href="">3</a></li>
+                                    <li><a href="">MERENGE</a></li>
+                                    <li><a href="">TRAP</a></li>
+                                    <li><a href="">TROPICAL</a></li>
                                 </ul>
                                 
                             </li>
@@ -148,8 +148,8 @@ max-width: 100%;
                         
                     </li>
                     
-                    <li><a href="">Soporte</a> </li>
-                    <li><a href="registro.html">Registrate aqui</a>
+                    <li><a href="Contacto.html">Contacto</a> </li>
+                    <li><a href="registro.php">Registrate aqui</a>
                         
                     </li>
                 </ul>

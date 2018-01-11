@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Musical Quality</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="css/metro.css" rel="stylesheet">
+      <link href="css/metro-icons.css" rel="stylesheet">
+      <link href="css/metro-responsive.css" rel="stylesheet">
+      <link href="css/metro-schemes.css" rel="stylesheet">
+      <script src="js/jquery-2.1.3.min.js"></script>
+      <script src="js/jquery.dt
+      ataTables.min.js"></script>
+      <script src="js/select2.min.js"></script>
+      <script src="js/metro.js"></script>
+      <script src="js/jquery.backstretch.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+      <link rel="stylesheet" href="css/estilos.css">
+  
+      
+     
+    <script>
+        $(document).ready(function (e) {
+            
+        
+            $.backstretch(["fondos/fon.jpg"]);
+        });
+    </script>
+    <style>
+         img{
+max-width: 100%;
+    }
+    </style>
+   
+</head>
+<body>
+        
+            <div>
+            <div class="app-bar darcula">
+
+                
+                    <div class="app-bar-element place-left">
+                            <picture>
+                                    
+                                <img src="fondos/logobxs.png" alt="logo">
+                                
+                            </picture>
+                        </div>
+                        
+                <div class="app-bar-element place-right">
+                        <a class="dropdown-toggle fg-white"><span class="mif-enter"></span> Ingresar</a>
+                        <div class="app-bar-drop-container bg-darcula fg-white place-right"
+                                data-role="dropdown" data-no-close="true">
+                            <div class="padding20">
+                                <form>
+                                    <h4 class="text-light">Ingresar</h4>
+                                    <div class="input-control text">
+                                        <span class="mif-user prepend-icon"></span>
+                                        <input type="text">
+                                    </div>
+                                    <div class="input-control text">
+                                        <span class="mif-lock prepend-icon"></span>
+                                        <input type="password">
+                                    </div>
+                                    <label class="input-control checkbox small-check">
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                        <span class="caption">Recordar</span>
+                                    </label>
+                                    <div class="form-actions">
+                                        <button class="button">Ingresar</button>
+                                        <button class="button link">Cancelar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div>
+                <a class="app-bar-element" href="index.php">Musical Quality</a>
+            
+                <span class="app-bar-divider"></span>
+            
+                <ul class="app-bar-menu">
+                        <ul class="app-bar-menu darcula">
+                    
+                                <li>
+                                        <a href="" class="dropdown-toggle">Generos</a>
+                                        <ul class="d-menu" data-role="dropdown">
+                                            <li><a href="">POP</a></li>
+                                            <li><a href="">REGUETON</a></li>
+                                            <li><a href="">SALSA</a></li>
+                                            <li><a href="">ELECTRONICA</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="" class="dropdown-toggle">Otros</a>
+                                                <ul class="d-menu" data-role="dropdown">
+                                                    <li><a href="">MERENGE</a></li>
+                                                    <li><a href="">TRAP</a></li>
+                                                    <li><a href="">TROPICAL</a></li>
+                                                </ul>
+                                                
+                                            </li>
+                
+                                        </ul>
+                                        
+                                    </li>
+                    <li><a href="Registro.php">Registrate aqui</a>
+                        
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </div>
+        
+    </div>  
+    <form action="mensaje.php" method="post">
+        <h2>CONTACTO</h2>
+        <div class="cell">
+                <label style="color:blueviolet">Nombre</label>
+                <div class="input-control text full-size">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                </div>
+            </div>
+        <div class="row cells2">
+                <div class="cell">
+                    <label style="color:blueviolet">Correo</label>
+                    <div class="input-control text full-size">
+                        <input type="text" name="correo" placeholder="Correo" required> 
+                    </div>
+                </div>
+        </div>
+        <div class="row cells2">
+                <div class="cell">
+                    <label style="color:blueviolet">Telefono</label>
+                    <div class="input-control text full-size">
+                        <input type="text" name="telefono" placeholder="Telefono">
+                    </div>
+                </div>
+        </div>
+
+        <label style="color:blueviolet">Mensaje</label>
+                <textarea name="mensaje" id="" cols="10" rows="3" placeholder="Escriba aqui su mensaje" required></textarea>
+    <input type="submit" value="ENVIAR">
+    </form> 
+    
+</body>
+</html>

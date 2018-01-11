@@ -91,7 +91,7 @@ max-width: 100%;
                     
                        
                         <div>
-                    <a class="app-bar-element" href="...">Musical Quality</a>
+                    <a class="app-bar-element" href="index.php">Musical Quality</a>
                 
                     <span class="app-bar-divider"></span>
                 
