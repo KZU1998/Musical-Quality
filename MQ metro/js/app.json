@@ -1,0 +1,32 @@
+{
+	"songs":[
+		{
+			"id":0,
+			"name":"Criminal",
+			"artist":"Ozuna ft Natti Natasha",
+			"song":"media/Criminal - Natti Natasha_ Ozuna [500kbps_M4A].m4a",
+			"image":"https://s.mxmcdn.net/images-storage/albums4/6/0/1/3/2/9/37923106_350_350.jpg"
+		},
+		{
+			"id":1,
+			"name":"2U",
+			"artist":"David Guetta Ft. Justin Bieber",
+			"song":"media/David Guetta Ft. Justin Bieber - 2U.mp3",
+			"image":"https://is2-ssl.mzstatic.com/image/thumb/Music117/v4/64/8a/03/648a0350-9c6d-6576-740e-ec413524a3a2/UMG_cvrart_00602557761658_01_RGB72_1800x1800_17UM1IM04739.jpg/268x0w.jpg"
+		},
+		{
+			"id":2,
+			"name":"Hello",
+			"artist":"Ozuna Ft Karol G",
+			"song":"media/Ozuna Ft Karol G - Hello ★ ® 2016.mp3",
+			"image":"http://www.elgenero.com/images/subir/images/1478192045hellosingl.jpg"
+		},
+		{
+			"id":3,
+			"name":"Sensualidad",
+			"artist":"Bad Bunny Ft. J Balvin y Prince Royce",
+			"song":"media/Bad Bunny Ft. J Balvin Y Prince Royce - Sensualidad.mp3",
+			"image":"http://cdn2.ipauta.com/wp-content/uploads/2017/11/Bad-Bunny-Ft.-J-Balvin-Y-Prince-Royce-Sensualidad.jpg"
+		}
+	]
+}
