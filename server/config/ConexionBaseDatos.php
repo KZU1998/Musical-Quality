@@ -4,7 +4,7 @@ class ConexionBaseDatos {
     private static $array = array();
     public static function DatosConexiones(){
         $array = array();
-        $array[] = new DatosConexion('local','localhost','id4105697_musicalquality','vessel9','vessel9');
+        $array[] = new DatosConexion('local''localhost','id4105697_musicalquality2','vessel9','vessel9');
         
         return $array;
     }
