@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $con = mysqli_connect("localhost","id4105697_vessel9","vessel9","id4105697_musicalquality2") or die("conexion exitosa!");
 	?>
 	<form method="POST" action="prueba.php">

@@ -119,16 +119,18 @@ max-width: 100%;
       <?php 
 	if(isset($_POST['insert'])){
 	
-        $nom = $_POST['nombre'];
-        $ape = $_POST['apellido'];
-        $eda = $_POST['edad'];
-        $mail = $_POST['email'];
-        $pass = $_POST['contra'];
+        $nom = mysqli_real_escape_string($con,$_POST['nombre']);
+        $ape = mysqli_real_escape_string($con,$_POST['apellido']);
+        $eda = mysqli_real_escape_string($con,$_POST['edad']);
+        $mail = mysqli_real_escape_string($con,$_POST['email']);
+        $pass = password_hash($_POST['contra'], PASSWORD_DEFAULT);
 		
 		
-		$insertar = "INSERT INTO Registro (nombre,apellido,edad,email,clave) values ('$nom','$ape','$eda','$mail','$pass')";
+		$insertar = mysqli_query($con,'INSERT INTO Registro (nombre,apellido,edad,email,clave) 
+        values ("'.$nom.'","'.$ape.'","'.$eda.'","'.$mail.'","'.$pass.'")') or die ('no se pudo registrar');
         
-        $ejecutar = mysqli_query($con, $insertar);
+       mysqli_close($con);
+       
 
 	
 	}

@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<?php  
-$con = mysqli_connect("localhost","id4105697_vessel9","vessel9","id4105697_musicalquality") or die("conexion exitosa!");
-?>
+<?php
+session_start();
+
+$con = mysqli_connect("localhost","id4105697_vessel9","vessel9","id4105697_musicalquality2") or die("conexion exitosa!");
+	?>
 <html>
 <head>
     <title>Musical Quality</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   <link href="css/metro.css" rel="stylesheet">
       <link href="css/metro-icons.css" rel="stylesheet">
       <link href="css/metro-responsive.css" rel="stylesheet">
@@ -89,21 +90,23 @@ max-width: 100%;
                                 
                             </picture>
                         </div>
-                        
+                       <?php
+                       if(empty($_SESSION['email'])){ 
+                           ?>
                 <div class="app-bar-element place-right">
                         <a class="dropdown-toggle fg-white"><span class="mif-enter"></span> Ingresar</a>
                         <div class="app-bar-drop-container bg-darcula fg-white place-right"
                                 data-role="dropdown" data-no-close="true">
                             <div class="padding20">
-                                <form>
+                                <form action="login.php" method="post">
                                     <h4 class="text-light">Ingresar</h4>
                                     <div class="input-control text">
                                         <span class="mif-user prepend-icon"></span>
-                                        <input type="text">
+                                        <input type="text" name="usuario" placeholder="E-mail">
                                     </div>
                                     <div class="input-control text">
                                         <span class="mif-lock prepend-icon"></span>
-                                        <input type="password">
+                                        <input type="password" name="contra" placeholder="contraseña"> 
                                     </div>
                                     <label class="input-control checkbox small-check">
                                         <input type="checkbox">
@@ -118,6 +121,25 @@ max-width: 100%;
                             </div>
                         </div>
                     </div>
+                
+                    <?php
+                       }else{
+                        ?>
+                        <div class="app-bar-element place-right">
+                            <a><?php print$_SESSION['email']; ?> </a>
+                            
+                       </div>
+                       <div class="app-bar-element place-right fg-white">
+                       <a href="logaut.php">Cerrar Sesion</a> 
+                       
+                            
+                       </div>
+                       
+
+                        <?php
+
+                       }
+                           ?>
                    
                     <div>
                 <a class="app-bar-element" href="index.php">Musical Quality</a>
@@ -164,7 +186,7 @@ max-width: 100%;
     </div>
     <div class="tile-group double">
         <h2>
-            <span class="tile-group-title fg-black">Top 10</span>
+            <span class="tile-group-title fg-black">Top Ten</span>
         </h2>
         <div class="tile" data-role="tile" data-effect="slideUpDown">
                 <div class="tile-content">
@@ -714,6 +736,227 @@ max-width: 100%;
             </div>
            
     </div>
+
+
+    <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUltimas canciones agregadas</h3>
+    <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Monstercat<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Can See <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Vigilancer - Can See.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Monstercat<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Can See <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Vigilancer - Can See.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Monstercat<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Can See <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Vigilancer - Can See.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Monstercat<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Can See <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Vigilancer - Can See.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Monstercat<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Can See <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Vigilancer - Can See.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Monstercat<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Can See <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Vigilancer - Can See.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Monstercat<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Can See <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Vigilancer - Can See.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+            <div class="tile" data-role="tile" data-effect="slideUpDown">
+                <div class="tile-content">
+                    <div class="live-slide">
+                            <a href="registro.html">
+                            <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="live-slide" style="color:blueviolet"> 
+                        
+                            <center>
+                            <p class="no-margin text-shadow">Monstercat<span class="text-bold" id="pressure"></span></p>
+                            <p class="no-margin text-shadow">Can See <span class="text-bold" id="ozone"></span></p>
+                            
+                            </center>
+                        <a href="registro.html">
+                        <img src="http://f4.bcbits.com/img/a2528363725_10.jpg">
+                    </a>
+                    </div>
+                    <div data-role="audio" data-mode="micro" >
+                            <audio>
+                                <source src="media/Vigilancer - Can See.mp3" type='audio/mp3'>
+                            </audio>
+                        </div> 
+                       
+                </div>
+            </div>
+           
+
           
 </body>
 </html>
