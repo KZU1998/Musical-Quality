@@ -147,7 +147,7 @@ max-width: 100%;
                             <li><a href="">POP</a></li>
                             <li><a href="Pages/indexR.html">Reggeaton</li>
                             <li><a href="">SALSA</a></li>
-                            <li><a href="">ELECTRONICA</a></li>
+                            <li><a href="Pages/indexE.html">ELECTRONICA</a></li>
                             <li class="divider"></li>
                             <li><a href="" class="dropdown-toggle">Otros</a>
                                 <ul class="d-menu" data-role="dropdown">
